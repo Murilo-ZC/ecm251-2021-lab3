@@ -9,3 +9,4 @@ Este repositório guarda os trabalhos e projetos da disciplina.
 - Python
 - C
 - Dart
+- Flutter
