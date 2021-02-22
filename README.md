@@ -10,3 +10,4 @@ Este repositório guarda os trabalhos e projetos da disciplina.
 - C
 - Dart
 - Flutter
+- JavaScript
