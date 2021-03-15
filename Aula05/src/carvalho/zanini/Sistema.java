@@ -43,6 +43,22 @@ public class Sistema {
                 } else {
                     System.out.println("Operação falhou! Verificar saldo!");
                 }
+            case 5:
+                System.out.println("Nome do título:");
+                String nomeTitulo = scanner.next();
+                System.out.println("Informe o valor do título:");
+                double valorTitulo = scanner.nextDouble();
+                System.out.println("Informe o valor do juros ao dia:");
+                double valorJurosTitulo = scanner.nextDouble();
+                System.out.println("Informe a data de vencimento (aaaa-mm-dd):");
+                String dataValidade = scanner.next();
+                Titulo titulo = new Titulo(valorTitulo,valorJurosTitulo,nomeTitulo, dataValidade);
+                if(this.conta.sacar(titulo.getTotalPagamento())){
+                    System.out.println("Operação realizada com sucesso!");
+                } else {
+                    System.out.println("Falha na operação!");
+                }
+                break;
             default:
                 System.out.println("Funcionalidade ainda não implementada");
                 break;
